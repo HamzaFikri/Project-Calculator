@@ -1,0 +1,169 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#resultat{
+	grid-area: res;
+	height: 70px;
+	box-shadow: 0px 0px 1px black;
+	background-color: #F4F6F8;
+	padding: 15px 0 0 15px;
+	display: inline;
+	
+}
+
+.couleur{
+	color: #83B2DD;
+}
+
+.row{
+	width: 100px;
+}
+.barre{
+	grid-area: bar;
+	color: gray;
+	height: 30px;
+	background-color: #F4F6F8;
+	box-shadow: 0px 0px 1px black;
+	padding: 10px 0px 0px 10px;
+}
+
+.barre span:hover{
+	background-color: #bde3f9;
+	border-radius: 5px 5px 5px;
+	padding:2%;
+
+}
+
+#egale{
+	background-color: #59A8E6;
+	color: white;
+}
+
+.number{
+	grid-area: num;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	"effacer     parentheses  pourcentage sur"
+	"seven       eight nine        fois"
+	"four        five  six         moins"
+	"one         two   three       plus"
+	"plusMoins zero  point       egale";
+}
+#supprimer{
+	float: right;
+	font-size: 25px;
+	margin-right: 5px;
+}
+#effacer{
+	grid-area: effacer;
+}
+#parentheses{
+	grid-area: parentheses;
+}
+#pourcentage{
+	grid-area: pourcentage;
+}
+#sur{
+	grid-area: sur;
+}
+#fois{
+	grid-area: fois;
+}
+#moins{
+	grid-area: moins;
+}
+#plus{
+	grid-area: plus;
+}
+#plusMoins{
+	grid-area: plusMoins;
+}
+#point{
+	grid-area: point;
+}
+#egale{
+	grid-area: egale;
+}
+#seven{
+	grid-area: seven;
+}
+#eight{
+	grid-area: eight;
+}
+#nine{
+	grid-area: nine;
+}
+#four{
+	grid-area: four;
+}
+#five{
+	grid-area: five;
+}
+#six{
+	grid-area: six;
+}
+#one{
+	grid-area: one;
+}
+#two{
+	grid-area: two;
+}
+#three{
+	grid-area: three;
+}
+#zero{
+	grid-area: zero;
+}
+/*#0E0E0E*/
+.number span{
+	text-align: center;
+	padding: 10px;
+	box-shadow: 0px 0px 2px gray;
+	background-color: #FAFAFA;
+	cursor: pointer;
+	user-select: none;
+
+}
+
+.number span:hover{
+	background-color: #bde3f9;
+	/*box-shadow: 1px 1px 4px black;*/
+}
+
+.wrapper{
+	margin: 100px 500px;
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-areas: 
+	"res"
+	"bar"
+	"num";
+}
+
+#historicContainer{
+	position: absolute;
+	top: 102px;
+	left: 500px;
+	height: 320px;
+	width: 300px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: none;
+	background-color: white;
+}
+
+.histoContent, .hideHistoContent{
+	box-shadow: 0px 0px 16px #DDD;
+	height: 30px;
+	width: 100%;
+	margin: 20px;
+	padding-left: 20px;
+	padding-top: 7px;
+
+}
+.histoContent:hover, .hideHistoContent:hover {
+    background-color: #bde3f9;
+}

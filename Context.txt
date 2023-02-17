@@ -1,0 +1,5 @@
+A calculator project coded using HTML, CSS, and JavaScript is a web-based application that allows users to perform basic mathematical operations through a user interface. 
+The HTML provides the structure of the calculator interface, CSS is used to style and layout the interface, 
+and JavaScript is used to provide the functionality for performing the calculations. 
+The calculator can take user input through button clicks or keyboard input and display the results in real-time on the interface. 
+The project may include additional features such as memory functions or scientific calculations, depending on the scope of the project.

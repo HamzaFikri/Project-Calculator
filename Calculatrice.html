@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/fontawesome-free-5.12.0-web/css/all.css" rel="stylesheet">
+	<link href="mainCalcul.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="resultat">0</div>
+		<div class="barre">
+			<span id="historique" onclick="displayHistorique()">Historique</span>
+			<i id="supprimer" class="fas fa-backspace" onclick="effacerLast()"></i>
+		</div>
+		<div class="number">
+			<span id="egale" onclick="calculer(this)">=</span>
+
+			<span id="effacer" onclick="effacerAll()">C</span>
+			<span id="parentheses" class="couleur" onclick="parentheses()">()</span>
+
+			<span id="pourcentage" class="couleur" onclick="afficherSymbole(this)">%</span>
+			<span id="sur" class="couleur" onclick="afficherSymbole(this)">/</span>
+			<span id="fois" class="couleur" onclick="afficherSymbole(this)">*</span>
+			<span id="moins" class="couleur" onclick="afficherSymbole(this)">-</span>
+			<span id="plus" class="couleur" onclick="afficherSymbole(this)">+</span>
+			<span id="plusMoins" onclick="afficherSymbole(this)">+/-</span>
+			<span id="point" onclick="afficherSymbole(this)">.</span>
+			
+			<span id="seven" onclick="afficherNum(this)">7</span>
+			<span id="eight" onclick="afficherNum(this)">8</span>
+			<span id="nine" onclick="afficherNum(this)">9</span>
+			<span id="four" onclick="afficherNum(this)">4</span>
+			<span id="five" onclick="afficherNum(this)">5</span>
+			<span id="six" onclick="afficherNum(this)">6</span>
+			<span id="one" onclick="afficherNum(this)">1</span>
+			<span id="two" onclick="afficherNum(this)">2</span>
+			<span id="three" onclick="afficherNum(this)">3</span>
+			<span id="zero" onclick="afficherNum(this)">0</span>
+			
+		</div>
+	</div>
+	<div id="historicContainer">
+		<div class="hideHistoContent" onclick="displayHistorique()">hide Historic</div>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
